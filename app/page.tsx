@@ -6,14 +6,14 @@ import { supabase } from "../lib/supabase"
 export default function Home() {
 
   // ✅ Auto-redirect if user is already logged in
-  useEffect(() => {
-    const checkUser = async () => {
-      const { data } = await supabase.auth.getUser()
+  //useEffect(() => {
+   // const checkUser = async () => {
+      //const { data } = await supabase.auth.getUser()
 
-      if (data.user) {
-        window.location.href = "/dashboard"
-      }
-    }
+      //if (data.user) {
+       // window.location.href = "/dashboard"
+     // }
+   // }
 
     checkUser()
   }, [])
