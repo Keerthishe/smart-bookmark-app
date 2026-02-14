@@ -3,20 +3,20 @@
 import { useEffect } from "react"
 import { supabase } from "../lib/supabase"
 
-export default function Home() {
+// export default function Home() {
 
-  // ✅ Auto-redirect if user is already logged in
-  //useEffect(() => {
-   // const checkUser = async () => {
-      //const { data } = await supabase.auth.getUser()
+//   // ✅ Auto-redirect if user is already logged in
+//   //useEffect(() => {
+//    // const checkUser = async () => {
+//       //const { data } = await supabase.auth.getUser()
 
-      //if (data.user) {
-       // window.location.href = "/dashboard"
-     // }
-   // }
+//       //if (data.user) {
+//        // window.location.href = "/dashboard"
+//      // }
+//    // }
 
-    checkUser()
-  }, [])
+//     checkUser()
+//   }, [])
 
   // ✅ Google Login with dynamic redirect
   const login = async () => {
